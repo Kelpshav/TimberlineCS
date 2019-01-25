@@ -23,15 +23,17 @@ The Dixie cup class, once written, will enable you to keep track of the contents
 	* public String getItem(int i)
 	* public void setItem(int index, String n)
 	* public void swap(DixieCup b, int i1, int i2)
+	* public int numItems()
 	* public int mostItems()
 	* public int leastItems()
 	* public String toString()
-	* public int numItems()
 
-You will also write the DixieCupMaker class.  This class will have a scanner that prompts the user for the number of cups.  The scanner must also prompt the user for the number of items allowed in each cup.  Finally, your scanner will prompt the user for different items, along with the Dixie cup in which to place the items.  
+
+You will also write the DixieCupMaker class.  This class will have a scanner that prompts the user for the number of cups (Up to 3, but not less than 2).  The scanner must also prompt the user for the number of items allowed in each cup.  Finally, your scanner will prompt the user for different items, along with the Dixie cup in which to place the items.  
 
 Once the cups are populated with items, your program will have a menu which prompts the user with the following options, 
 
+- Add an item 
 - Change an item
 - Remove an item
 - Swap items
@@ -43,53 +45,85 @@ Once the option is selected, you must collect the necessary information from the
 
 # Your Tasks
 
-
-
-
-- [ ] Begin a project in NetBeans called FindParking
-- [ ] Locate the ParkingSpot class in the "stubs" folder of this project folder [https://github.com/hpluska/TimberlineCS/blob/master/APCSA/Project2/Stubs/ParkingSpot.java](https://github.com/hpluska/TimberlineCS/blob/master/APCSA/Project2/Stubs/ParkingSpot.java)
-- [ ] Save the ParkingSpot class and place it in your NetBeans project folder
-- [ ] Write the class called FindParking. It is the driver class, meaning, it will contain the main method.
-
-In this class you must, 
-
-- [ ] Create a Scanner using the standard input as follows, 
+- [ ] Begin a project in NetBeans called DixieCupMaker
+- [ ] Create a new java class in the DixieCupMaker project folder called DixieCup
+- [ ] Write the DixieCup class. This class should have the following methods initially, 
+	* public DixieCup(int i) - the constructor
+	* public void addItem(String n)
+	* public String getItem(int i)
+	* public void removeItem(String n)
+- [ ] In the DixieCupMaker class Create a Scanner using the standard input as follows, 
 
 ```
 Scanner in = new Scanner(System.in);
-```
+``` 
 
-- [ ] Your scanner should prompt the user for a String value for the amount of parking time needed in the following format, hh:mm
-- [ ] Your scanner should prompt the user for a String value for the name of the car's location (for example, "Timberline HS")
-- [ ] Once you have collected the necessary information from the user,  your program should generate random x and y starting coordinates for the car.  These values will range from 0 to 100 (100 not inclusive). 
-- [ ] Create three ParkingSpot objects with random x and y location coordinates ranging from 0 to 100 (100 not inclusive).  You will also need to provide names for the parking spots (for example, "1st and main").  See the constructor
-in the ParkingSpot class for expected parameters. 
-- [ ] Change the default parking cost for two of the parking spots using the setCostPerInterval() method in the ParkingSpot class.  
-	* For example if you created a parking spot called "spot1", you can set the interval using spot1.setCostPerInterval(40);
-- [ ] Calculate how much it costs to park at each of the spots you created.  
-	* You can get the cost to park per 10 minutes using the getCostPerInterval() method (for example, spot1.getCostPerInterval());  
-	* You will need to convert the time in hh:mm to total time in minutes 
-	* You will then need to figure out the total cost to park at each spot. (parking meters do not round down!)
-	* The total cost will need to be converted to a String so it prints as expected (for example, $1.50);
-	* Once you figure out the total cost you need to set the total cost (for example, spot1.setTotalCost("$1.50"))
-		* Note: there are other ways to do the above using the NumberFormat class, but just use Strings here. 
-- [ ] Calculate the distance from the driver for each spot using Manhattan geometry: 
-	* for two points (x1, y1) and (x2, y2) the distance is |x1 − x2| + |y1 − y2|
-	* Once you figure out the total distance you need to set the total distance (for example, spot1.setDistance(65));
-- [ ] Use if statements to figure out which spot is closest, which is second closest, which is third closest. 
-	* You can access the distance for each spot using the getDistance() method (for examples, spot1.getDistance());
-- [ ] You will print out the locations in order from closest to farthest in a table like the one shown below, 
+- [ ] Your scanner should,
+	* Prompt the user for the number of cups (Up to 3, but not less than 2)
+ 	* Declare a cups array
 
 ```
+DixieCup[] cupsArray = new DixieCup[numCups];
+```
 
-***************************************************************************************************************************
-My cars location: Timberline High School     x-coordinate: 88           y-coordinate:77
-***************************************************************************************************************************
-Parking Spot        unit cost       total cost       x-location          y-location           distance          available
-***************************************************************************************************************************
-1st and main            25             $1.50             65                   45                  55               true
-downtown library        30             $3.00             77                   56                  58               true
-Capital building        10             $ .75             35                   85                  61               true
+- [ ] Your scanner should then,
+	* Prompt the user for how many items are allowed in each cup
+	* Create a cup at each location in the cupsArray, 
+
+```
+cupsArray[0]= new DixieCup[numThings];
+cupsArray[1] = new DixieCup[numThings];
+etc...
+```
+
+- [ ] Once the cups are declared, create a menu which prompts the user with the following options, 
+
+	* Add an item 
+	* Get an item 
+	* Remove an item
+	* Change an item
+	* Swap items
+	* Display the contents of a Dixie cup
+	* Summary of all Dixie cups
+	* Quit
+
+- [ ] Test the following methods, 
+	* addItem
+	* getItem
+	* removeItem
+
+- [ ] Fix the addItem method.  There are two problems with the addItem method.  
+	* First, if you add items beyond the length of the declared items array you will go out of bounds. 
+	* Second, if you remove an item, how might you add an item to the “empty” location? Rewrite this method to account for this problem.
+
+- [ ] Write a toString method.  The toString method will be executed when the user selects the "Display the contents of a Dixie cup" option from the menu. 
+
+- [ ] In the DixieCup class, write a method called setItem() that sets an item in a cup to a different item.  For example, what if I wanted to change the paper clip to a toothpick?  This method should accept an int variable as a parameter.  This variable corresponds to the index of the item to be set.   
+
+- [ ] In the DixieCup class, write a method called swapItems() that swaps an item in one cup with another item from a different cup.  The method should accept three parameters.  The first parameter is the DixieCup object you want to swap with.  The next parameters are integers which represent the indices of the items to be swapped.  
+
+- [ ] In the DixieCup class, write a method called numItems() that returns the total number of items in the cup.  Your method should ignore items with null values. 
+
+- [ ] In the DixieCup class, write a method called mostItems() that returns the cup with the most items. 
+
+- [ ] In the DixieCup class, write a method called leastItems() that returns the cup with the least items.
+
+- [ ] Make sure the menu you create calls the appropriate the methods and displays the appropriate content
+
+- [ ] Test your program thoroughly to make sure it works properly for all conditions  
+
+- [ ] Implement the "Summary of all Dixie cups" option.  When the summary of all dixie cups is called, it should print out a summary of the cups as shown below.  For a *three cup system*, it should print out the cups in order with respect to the number of things in the cup from fewest to greatest.  (YOU ONLY NEED TO BE ABLE TO DO THIS FOR A 3 CUP SYSTEM)
+
+```
+******************************************************************************
+Cup with the most items:  cup 0              Cup with the least items: cup 1
+******************************************************************************
+Cup        Number of Items       
+******************************************************************************
+1         	3
+2               4
+0               6
+
 ```
 
 
