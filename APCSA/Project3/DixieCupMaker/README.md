@@ -24,10 +24,7 @@ The Dixie cup class, once written, will enable you to keep track of the contents
 	* public void setItem(int index, String n)
 	* public void swap(DixieCup b, int i1, int i2)
 	* public int numItems()
-	* public int mostItems()
-	* public int leastItems()
 	* public String toString()
-
 
 You will also write the DixieCupMaker class.  This class will have a scanner that prompts the user for the number of cups (Up to 3, but not less than 2).  The scanner must also prompt the user for the number of items allowed in each cup.  Finally, your scanner will prompt the user for different items, along with the Dixie cup in which to place the items.  
 
@@ -60,6 +57,7 @@ Scanner in = new Scanner(System.in);
 
 - [ ] Your scanner should,
 	* Prompt the user for the number of cups (Up to 3, but not less than 2)
+	* Your program should continously prompt the user until there is more than 1 cup, but less than 4.
  	* Declare a cups array
 
 ```
@@ -68,6 +66,7 @@ DixieCup[] cupsArray = new DixieCup[numCups];
 
 - [ ] Your scanner should then,
 	* Prompt the user for how many items are allowed in each cup
+	* There must be at least 1 item in each cup.  Your program should continuously prompt the user until each cup has at least 1 item.
 	* Create a cup at each location in the cupsArray, 
 
 ```
@@ -103,10 +102,6 @@ etc...
 - [ ] In the DixieCup class, write a method called swapItems() that swaps an item in one cup with another item from a different cup.  The method should accept three parameters.  The first parameter is the DixieCup object you want to swap with.  The next parameters are integers which represent the indices of the items to be swapped.  
 
 - [ ] In the DixieCup class, write a method called numItems() that returns the total number of items in the cup.  Your method should ignore items with null values. 
-
-- [ ] In the DixieCup class, write a method called mostItems() that returns the cup with the most items. 
-
-- [ ] In the DixieCup class, write a method called leastItems() that returns the cup with the least items.
 
 - [ ] Make sure the menu you create calls the appropriate the methods and displays the appropriate content
 
