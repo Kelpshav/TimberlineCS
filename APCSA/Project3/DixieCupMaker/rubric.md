@@ -1,13 +1,12 @@
 Grade: /120
 
-=================================================
-Quality (20 points)
+# Quality (20 points)
 
 - Submission:                      /5
 - Documentation:                   /10
 - Code style:	                   /5
 
-DixieCup (40 points each)
+# DixieCup (40 points each)
 
 The following methods are included in the DixeCup class (5 points each)
 
@@ -20,7 +19,7 @@ The following methods are included in the DixeCup class (5 points each)
 - public int numItems()
 - public String toString()
 
-DixeCupMaker (40 points)
+# DixeCupMaker (40 points)
 
 - Continuously prompts the user until there is more than 1 cup, 
 but less than 4. (5 points)
@@ -31,7 +30,7 @@ until there is more than 1 item in each cup (5 points)
 - Checks for boundary conditions for each method, that is, it prevents the user from going "out of bounds" (10 points)
 - Implements the "Summary of all Dixie cups" option for a three cup system (10 points)
 
-Group Activity (20 points)
+# Group Activity (20 points)
 
 - Submits completed group activity
 
