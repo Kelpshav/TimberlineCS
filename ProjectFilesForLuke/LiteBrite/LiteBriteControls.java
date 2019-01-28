@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//package litebrite;
+
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -15,12 +15,21 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author timberlinepluska
+ * @author Pluska
  */
 public class LiteBriteControls extends JPanel {
     
     private JButton colorClicked;
     private Color pegColor;
+    
+    /* TODO:  
+        Add at least three more colors.  
+        For each color, create a new button. 
+        For each button you add, you will need to change the GridLayout 
+        dimensions to fit the required buttons
+        For each button you add, you will need to modify the getPegColor 
+        method
+    */
     
     public LiteBriteControls(ActionListener a){
     

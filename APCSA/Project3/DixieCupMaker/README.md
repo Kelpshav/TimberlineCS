@@ -121,7 +121,9 @@ Cup        Number of Items
 
 ```
 
+- [ ] Grade your project against the Rubric (coming soon!)
 
+- [ ] Submit your project according to the submission guidelines on Zofia
 
 
 
