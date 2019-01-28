@@ -121,7 +121,7 @@ Cup        Number of Items
 
 ```
 
-- [ ] Grade your project against the Rubric (coming soon!)
+- [ ] Grade your project against the Rubric [https://github.com/hpluska/TimberlineCS/blob/master/APCSA/Project3/DixieCupMaker/rubric.md](https://github.com/hpluska/TimberlineCS/blob/master/APCSA/Project3/DixieCupMaker/rubric.md)
 
 - [ ] Submit your project according to the submission guidelines on Zofia
 
