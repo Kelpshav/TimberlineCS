@@ -1,0 +1,32 @@
+# Project 2: Playlist
+
+* Author: Sarthak Jain
+* Class: APCS Period 2
+* School Year: 2018-2019
+
+## Overview
+
+This Java application displays a playlist where different kinds of songs would be played and we would get a average playtime and plays songs closest to 240 seconds
+
+## Compiling and Using
+
+To compile, execute the following command in the main project directory:
+```
+$ javac PlayList.java
+```
+
+Run the compiled class with the command:
+```
+$ java PlayList
+```
+
+## Discussion
+Since I had never used Netbeans before, I was really confused by its layout. However, when I started to use the starter code, I finally started to understand how it works. I did not know how the different codes were to be used in an amalmagation. I then messed around with the code and then found how to play the different songs with the user adding their input by using a scanner, if else statements, switch statements and case statements. I also did not know how to convert the time into seconds so I asked my cousin for help and he helped me out by suggesting that I use a parse int to convert the time.
+
+This project was tough at first, but it was fun and I feel like I learned a lot about Java.
+
+## Extra Credit
+N/A
+
+## Sources used
+Help of Cousin

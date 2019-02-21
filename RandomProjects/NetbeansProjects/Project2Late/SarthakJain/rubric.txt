@@ -1,0 +1,34 @@
+Grade: /100
+
+- Your project was not submitted properly (-5)
+- Late (-10)
+- In the README project description, you need to be more thorough.  Your project does more than you indicate. (-2)
+- In the compiling and usage section, you must also indicate the need for user input and what that input is (-1)
+- The Testing section in the README is missing (-2)
+- Missing a description at the top of PlayList class (-1)
+- There is still code your program that is identical to another student, yet you do not reference your sources (-5)
+
+- Your program does not compile as written (-5)
+
+
+
+=================================================
+
+Quality
+- Submission:     5/5
+- Documentation: 10/10
+- Code Style:    10/10
+
+Features
+- Create PlayList with a main method: 5/5
+- Read in data for 3 songs from keyboard: 10/10
+- Create new Song object for each song: 10/10
+- Find and report average play time: 10/10
+- Find and report song with play time closest to 4 minutes: 10/10
+- Build play list of songs from shortest to longest: 10/10
+- Print formatted play list: 10/10
+- Play back songs while the play list is displayed: 10/10
+
+Late penalty:
+
+Extra credit:

@@ -1,0 +1,41 @@
+#Project 2: Song Player
+
+*Author: Jason Choi
+*Class: AP Computer Science
+*Semester: Fall-Winter 2018
+
+##Overview
+
+This java application plays songs and sorts them into 6 different lists
+
+##Compiling and Using
+
+First, find the file in your directory
+
+cd Desktop,---
+
+javac PlayList.java
+
+java PlayList
+
+then plug in the songs, author, time, and location
+
+receive you table and the songs play
+
+##Discussion
+
+It took me a while to take off with the song lables as I didn't know how to do that (then saw the song file).
+
+Average time was the easiest for me as it was simple mathematics which are easy in java.
+
+Saving the songs as an object took me a while for me to think it out as it is a bit complicated I feel personally.
+
+I think the finding the shortests song was pretty straight forward but took a long time to do due to the sheer amount of coding involved with it.
+
+Lastly I did not know how to do the testing check for this one so I needed to receive help from Elijah about the checking process.
+
+I personally prefer do/while statement but it would not work for the detecting the order and printing since it would not print anything.
+
+I tried to do double for the time average, but it would not work so I had to do float instead.
+
+I tried to the whole project in NetBeans at first but could not figure out how to the thing with storing sons in the right place, so I just did it with notpad and terminal to run.

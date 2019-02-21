@@ -1,0 +1,28 @@
+Grade: /100
+
+- Your project was not submitted properly (-5)
+- Late (-10)
+- In the compiling and usage section, you need to indicate how to compile and run your program from the command line.  You should also indicate the required user input (-2)
+- The Testing section in the README is missing (-2)
+- Your program looks great!  Where you execute the playSong() method however causes the list to not display (-10)
+
+=================================================
+
+Quality
+- Submission:     5/5
+- Documentation: 10/10
+- Code Style:    10/10
+
+Features
+- Create PlayList with a main method: 5/5
+- Read in data for 3 songs from keyboard: 10/10
+- Create new Song object for each song: 10/10
+- Find and report average play time: 10/10
+- Find and report song with play time closest to 4 minutes: 10/10
+- Build play list of songs from shortest to longest: 10/10
+- Print formatted play list: 10/10
+- Play back songs while the play list is displayed: 10/10
+
+Late penalty:
+
+Extra credit:

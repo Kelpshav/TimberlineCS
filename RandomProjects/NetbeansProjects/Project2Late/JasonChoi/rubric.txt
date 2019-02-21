@@ -1,0 +1,31 @@
+Grade: /100
+
+- Your project was not submitted properly (-5)
+- Late (-10)
+- Your project description provided in the README should be more thorough.  The program does more than what you indicate. (-2)
+- In the compiling and usage section, you need not indicate that I need to change directories to the Desktop.  This is not necessary. What if my program is stored elsewhere? (-1)
+- The Testing section in the README is missing (-2)
+- In the PlayList class you need to provide a description of the class. (-1)
+- There are significant amounts of test code you left behind, this should be removed before finalizing (-1)
+- There are significant portions of your code that are identical to another students in the class. You do not cite this student.  (-10)
+
+=================================================
+
+Quality
+- Submission:     5/5
+- Documentation: 10/10
+- Code Style:    10/10
+
+Features
+- Create PlayList with a main method: 5/5
+- Read in data for 3 songs from keyboard: 10/10
+- Create new Song object for each song: 10/10
+- Find and report average play time: 10/10
+- Find and report song with play time closest to 4 minutes: 10/10
+- Build play list of songs from shortest to longest: 10/10
+- Print formatted play list: 10/10
+- Play back songs while the play list is displayed: 10/10
+
+Late penalty:
+
+Extra credit:

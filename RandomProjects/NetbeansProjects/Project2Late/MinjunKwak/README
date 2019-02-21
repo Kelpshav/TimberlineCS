@@ -1,0 +1,40 @@
+# Project 2: Project PlayList
+
+*Author: Minjun Kwak
+*Class: APCSA Period 2
+*Semester: Winter 2018
+
+## Overview
+This program accepts song details from the user and prints a 
+playlist, the average song playtime, and the song that has a 
+playtime closest to 240 seconds.
+
+## Compliling and Using
+To compile, execute sudo chmmod 777 grader.sh
+Then execute ./grader.sh while in the P2Test folder 
+The inputted values by the grader will then be printed in playlist 
+format with the average play time and the song closest to 
+240 seconds printed
+
+## Discussion
+The goal of this project was to order three songs inputted by the user 
+into a playlist sorted by playtime length, then play each song. To convert 
+(mm:ss) to an integer, I used an array, a .split, and a parseInt. I sorted 
+the songs by playtime using multiple if statements, comparing two playtimes 
+twice to figure out which song was the smallest and largest and then using 
+the or(||) to figure out which song was the second largest playtime. To figure
+out the average time, I simply added the playtimes and divided by three. To 
+figure out the song closest to 240 seconds, I subtracted each playtime by 240 
+and took the absolute value, knowing that the number closest to 0 would then be 
+the closest. I then compared each result to each other, printing the smallest
+number which would be the song closest to 240.
+
+## Extra Credit 
+No extra credit
+
+## Sources Used
+I used https://stackoverflow.com/questions/32531962/how-to-sort-numbers-with-if-statements-java
+to help me figure out how to convert (mm:ss) to an integer
+
+
+
