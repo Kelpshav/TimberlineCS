@@ -48,8 +48,14 @@ public class CardCounter extends CardDealer{
         }
         return values;
     }
-    
-    //TODO: Write a method called show sumDeal that returns the sum of all the cards dealt 
-    
+       //TODO: Write a method called show sumDeal that returns the sum of all the cards dealt 
+    public int sumDeal(){
+    int sum = 0;
+    Card[] dealtCards = getDealtCards();
+        for(int c = 0; c < dealtCards.length;c++){
+            sum += dealtCards[c].getValue();
+        }
+        return sum;
+    }
     
 }

@@ -14,32 +14,37 @@ import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
+import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
  * @author Pluska
  */
-public class CardPanel extends JPanel implements ActionListener {
+public class CardPane extends JPanel implements ActionListener {
     private int dealSize;
     private JButton clicked;
     private Card clickedCard;
     private JButton[] cardButtons;
     private Card cardArray[];
-    private String pathToCardImages="C:\\Users\\HP Sprout\\Desktop\\TimberlineCS\\APCSALabs\\NetbeansProjects\\CardCounter\\src\\images\\";
+    private String pathToCardImages="C:\\Users\\HP Sprout\\Desktop\\TimberlineCS\\APCSALabs\\NetbeansProjects\\CardCounterWithGUI\\src\\images\\";
     ImageIcon cardImageIcon;
+    int sum;
 
     /**
      *
      * @param d
      */
-    public CardPanel(){
+    public CardPane(){
         
         dealSize = 10;
         CardCounter myDeal = new CardCounter(dealSize);
         cardArray = myDeal.getDealtCards();
+        sum = myDeal.sumDeal();
 	int valuesArray[] = myDeal.countValues();
         String cardValues[] = myDeal.getCardValues();
         int suiteValuesArray[] = myDeal.countSuites();
@@ -70,7 +75,7 @@ public class CardPanel extends JPanel implements ActionListener {
 
         cardButtons = new JButton[dealSize];
         setLayout(new FlowLayout());
-        setPreferredSize(new Dimension(500,500));
+        setPreferredSize(new Dimension(500,400));
         
         for(int c = 0; c < cardArray.length;c++){
             String cardImage = "card"+cardArray[c].getSuite()+cardArray[c].getFaceValue()+".png";

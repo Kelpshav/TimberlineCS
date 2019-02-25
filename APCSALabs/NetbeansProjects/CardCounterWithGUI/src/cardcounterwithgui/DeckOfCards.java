@@ -66,7 +66,7 @@ public class DeckOfCards {
      * @param Card - the Card object we want the suite to retreive
      * @return
      */
-	public char getSuite(Card c){
+    public char getSuite(Card c){
         
         String suite = c.toString();
         return suite.charAt(suite.length() - 1);
@@ -119,7 +119,7 @@ public class DeckOfCards {
      *
      * @return an array of card values
      */
-	public String[] getCardValues(){
+    public String[] getCardValues(){
         return values;
     }
     

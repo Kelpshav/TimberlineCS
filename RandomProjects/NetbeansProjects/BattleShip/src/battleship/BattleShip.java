@@ -5,13 +5,16 @@
  */
 package battleship;
 
+import java.awt.Dimension;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JSplitPane;
 
 /**
  *
  * @author timberlinepluska
  */
-public class BattleShip {
+public class BattleShip extends JFrame {
 
     /**
      * @param args the command line arguments
@@ -23,5 +26,8 @@ public class BattleShip {
 		frame.pack();
 		frame.setVisible(true);
     }
+    
+   
+    
     
 }
